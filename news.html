@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News &amp; Announcements – Imota LCDA</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <style>
+    .filter-btn{padding:8px 18px;border-radius:100px;border:1.5px solid var(--border);background:var(--white);font-size:13px;font-weight:500;cursor:pointer;transition:all .2s;color:var(--gray-800)}
+    .filter-btn:hover,.filter-btn.active{background:var(--green);color:var(--white);border-color:var(--green)}
+    .news-card.hidden{display:none}
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>📞 +234 800 000 0000</span>
+      <span>✉️ info@imotaLCDA.gov.ng</span>
+      <span class="topbar-right"><a href="portal.html" class="topbar-link">Staff Portal</a><span class="divider">|</span><a href="contact.html" class="topbar-link">Contact Us</a></span>
+    </div>
+  </div>
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <img src="images/coat-of-arms.svg" alt="Coat of Arms" class="brand-logo" />
+        <div class="brand-text"><span class="brand-title">Imota LCDA</span><span class="brand-sub">Lagos State, Nigeria</span></div>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <div class="dropdown">
+          <a href="about.html" class="nav-link">About <span class="chevron">▾</span></a>
+          <div class="dropdown-menu">
+            <a href="about.html">About Imota</a><a href="chairman.html">Chairman's Message</a>
+            <a href="council.html">Council Members</a><a href="history.html">Our History</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="services.html" class="nav-link">Services <span class="chevron">▾</span></a>
+          <div class="dropdown-menu">
+            <a href="services.html#births">Births &amp; Deaths</a><a href="services.html#permits">Permits &amp; Licences</a>
+            <a href="services.html#taxes">Revenue &amp; Taxes</a><a href="services.html#welfare">Social Welfare</a>
+          </div>
+        </div>
+        <a href="news.html" class="nav-link active">News</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-badge">Stay Informed</div>
+      <h1>News &amp; Announcements</h1>
+      <p>Official news, press releases, and public notices from Imota Local Community Development Area.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:36px" id="filterTabs">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="Infrastructure">Infrastructure</button>
+        <button class="filter-btn" data-filter="Education">Education</button>
+        <button class="filter-btn" data-filter="Health">Health</button>
+        <button class="filter-btn" data-filter="Notice">Notices</button>
+        <button class="filter-btn" data-filter="Economy">Economy</button>
+      </div>
+      <div class="news-grid" id="newsGrid" style="grid-template-columns:repeat(auto-fill,minmax(300px,1fr));grid-template-rows:unset">
+
+        <article class="news-card" data-category="Infrastructure">
+          <div class="news-img-wrap" style="background:var(--green-light);aspect-ratio:16/9"><span class="news-tag">Infrastructure</span></div>
+          <div class="news-body">
+            <time class="news-date">June 20, 2026</time>
+            <h3><a href="news-detail.html">LCDA Commences Road Rehabilitation on Major Imota Streets</a></h3>
+            <p>The Imota LCDA administration has kicked off a comprehensive road rehabilitation project covering five major streets within the community.</p>
+            <a href="news-detail.html" class="read-more">Read More →</a>
+          </div>
+        </article>
+
+        <article class="news-card" data-category="Education">
+          <div class="news-body" style="padding:24px">
+            <span class="news-tag-inline">Education</span>
+            <time class="news-date">June 15, 2026</time>
+            <h3><a href="news-detail.html">Free Skills Acquisition Programme Opens Registration</a></h3>
+            <p>Residents between 18–35 years are encouraged to register for the free vocational training initiative covering tailoring, ICT, welding, and catering. Registration closes July 5, 2026.</p>
+            <a href="news-detail.html" class="read-more">Read More →</a>
+          </div>
+        </article>
+
+        <article class="news-card" data-category="Health">
+          <div class="news-body" style="padding:24px">
+            <span class="news-tag-inline">Health</span>
+            <time class="news-date">June 10, 2026</time>
+            <h3><a href="news-detail.html">Free Medical Outreach at Imota Market – June 30</a></h3>
+            <p>A free medical outreach covering malaria testing, blood pressure checks, HIV screening, and eye care is scheduled for June 30, 2026 at the Imota Market Square.</p>
+            <a href="news-detail.html" class="read-more">Read More →</a>
+          </div>
+        </article>
+
+        <article class="news-card" data-category="Notice">
+          <div class="news-body" style="padding:24px">
+            <span class="news-tag-inline">Notice</span>
+            <time class="news-date">June 5, 2026</time>
+            <h3><a href="news-detail.html">Town Hall Meeting – June 28 at LCDA Secretariat</a></h3>
+            <p>All residents and stakeholders are invited to the quarterly town hall meeting to discuss ongoing projects, budget performance, and community concerns.</p>
+            <a href="news-detail.html" class="read-more">Read More →</a>
+          </div>
+        </article>
+
+        <article class="news-card" data-category="Economy">
+          <div class="news-body" style="padding:24px">
+            <span class="news-tag-inline">Economy</span>
+            <time class="news-date">May 28, 2026</time>
+            <h3><a href="news-detail.html">LCDA Partners with Microfinance Bank for SME Loans</a></h3>
+            <p>Imota LCDA has signed an MOU with a leading microfinance institution to provide low-interest business loans to small and medium enterprises.</p>
+            <a href="news-detail.html" class="read-more">Read More →</a>
+          </div>
+        </article>
+
+        <article class="news-card" data-category="Infrastructure">
+          <div class="news-body" style="padding:24px">
+            <span class="news-tag-inline">Infrastructure</span>
+            <time class="news-date">May 20, 2026</time>
+            <h3><a href="news-detail.html">Solar Street Lights Installed in 6 Communities</a></h3>
+            <p>Over 120 solar-powered street lights have been installed across six communities in Imota LCDA, improving nighttime security.</p>
+            <a href="news-detail.html" class="read-more">Read More →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col brand-col">
+        <div class="footer-brand"><img src="images/coat-of-arms.svg" alt="Coat of Arms" class="footer-logo" /><div><strong>Imota LCDA</strong><small>Lagos State, Nigeria</small></div></div>
+        <p class="footer-about">Imota Local Community Development Area, Ikorodu Federal Constituency.</p>
+        <div class="social-links"><a href="#" class="social-link">f</a><a href="#" class="social-link">𝕏</a><a href="#" class="social-link">in</a><a href="#" class="social-link">▶</a></div>
+      </div>
+      <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="about.html">About Imota LCDA</a></li><li><a href="chairman.html">Chairman's Message</a></li><li><a href="projects.html">Development Projects</a></li><li><a href="news.html">News</a></li></ul></div>
+      <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html#births">Births &amp; Deaths</a></li><li><a href="services.html#permits">Permits &amp; Licences</a></li><li><a href="services.html#taxes">Revenue Payment</a></li><li><a href="services.html#welfare">Social Welfare</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><address><p>📍 Imota LCDA Secretariat, Lagos</p><p>📞 +234 800 000 0000</p><p>✉️ info@imotaLCDA.gov.ng</p></address></div>
+    </div>
+    <div class="footer-bottom"><div class="container"><span>© 2026 Imota Local Community Development Area.</span><span class="footer-bottom-links"><a href="privacy.html">Privacy Policy</a> · <a href="accessibility.html">Accessibility</a></span></div></div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script>
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('#newsGrid .news-card').forEach(card => {
+          card.classList.toggle('hidden', filter !== 'all' && card.dataset.category !== filter);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

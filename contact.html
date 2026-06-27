@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Imota LCDA</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>📞 +234 800 000 0000</span>
+      <span>✉️ info@imotaLCDA.gov.ng</span>
+      <span class="topbar-right"><a href="portal.html" class="topbar-link">Staff Portal</a><span class="divider">|</span><a href="contact.html" class="topbar-link">Contact Us</a></span>
+    </div>
+  </div>
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <img src="images/coat-of-arms.svg" alt="Coat of Arms" class="brand-logo" />
+        <div class="brand-text"><span class="brand-title">Imota LCDA</span><span class="brand-sub">Lagos State, Nigeria</span></div>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <div class="dropdown">
+          <a href="about.html" class="nav-link">About <span class="chevron">▾</span></a>
+          <div class="dropdown-menu">
+            <a href="about.html">About Imota</a><a href="chairman.html">Chairman's Message</a>
+            <a href="council.html">Council Members</a><a href="history.html">Our History</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="services.html" class="nav-link">Services <span class="chevron">▾</span></a>
+          <div class="dropdown-menu">
+            <a href="services.html#births">Births &amp; Deaths</a><a href="services.html#permits">Permits &amp; Licences</a>
+            <a href="services.html#taxes">Revenue &amp; Taxes</a><a href="services.html#welfare">Social Welfare</a>
+          </div>
+        </div>
+        <a href="news.html" class="nav-link">News</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-badge">Get In Touch</div>
+      <h1>Contact Us</h1>
+      <p>Reach the Imota LCDA secretariat, departments, or submit a complaint or enquiry.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info-card">
+          <h3>Our Office</h3>
+          <div class="contact-info-item"><div class="icon">📍</div><div><strong>Address</strong><p>Imota LCDA Secretariat,<br />Imota, Ikorodu,<br />Lagos State, Nigeria</p></div></div>
+          <div class="contact-info-item"><div class="icon">📞</div><div><strong>Phone</strong><p>+234 800 000 0000</p></div></div>
+          <div class="contact-info-item"><div class="icon">✉️</div><div><strong>Email</strong><p>info@imotaLCDA.gov.ng</p></div></div>
+          <div class="contact-info-item"><div class="icon">🕐</div><div><strong>Office Hours</strong><p>Monday – Friday<br />8:00am – 4:00pm</p></div></div>
+          <div class="contact-info-item"><div class="icon">🚨</div><div><strong>Emergency</strong><p>+234 800 000 0001<br />(24-hour line)</p></div></div>
+        </div>
+        <div class="contact-form-wrap">
+          <h3>Send Us a Message</h3>
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group"><label for="firstName">First Name *</label><input type="text" id="firstName" required placeholder="e.g. Adebayo" /></div>
+              <div class="form-group"><label for="lastName">Last Name *</label><input type="text" id="lastName" required placeholder="e.g. Okonkwo" /></div>
+            </div>
+            <div class="form-group"><label for="email">Email Address *</label><input type="email" id="email" required placeholder="your@email.com" /></div>
+            <div class="form-group"><label for="phone">Phone Number</label><input type="tel" id="phone" placeholder="+234 800 000 0000" /></div>
+            <div class="form-group"><label for="subject">Subject *</label>
+              <select id="subject" required>
+                <option value="">-- Select a subject --</option>
+                <option>General Enquiry</option><option>Complaint</option><option>Service Request</option>
+                <option>Project Information</option><option>Media &amp; Press</option><option>Other</option>
+              </select>
+            </div>
+            <div class="form-group"><label for="message">Message *</label><textarea id="message" required placeholder="Describe your enquiry or complaint in detail…"></textarea></div>
+            <button type="submit" class="btn btn-primary" style="width:100%">Send Message</button>
+          </form>
+        </div>
+      </div>
+
+      <div style="margin-top:64px">
+        <h2 class="section-title" style="margin-bottom:8px">Department Contacts</h2>
+        <p class="section-sub" style="margin-bottom:32px">Reach specific departments directly for faster service</p>
+        <div class="services-grid">
+          <div class="service-card" style="cursor:default"><div class="service-icon">📋</div><h3>Civil Registration</h3><p>Births, Deaths &amp; Marriage<br />registry.imota@gov.ng</p></div>
+          <div class="service-card" style="cursor:default"><div class="service-icon">🏗️</div><h3>Physical Planning</h3><p>Permits &amp; building approvals<br />planning.imota@gov.ng</p></div>
+          <div class="service-card" style="cursor:default"><div class="service-icon">💳</div><h3>Finance &amp; Revenue</h3><p>Taxes, levies &amp; payments<br />revenue.imota@gov.ng</p></div>
+          <div class="service-card" style="cursor:default"><div class="service-icon">🤝</div><h3>Social Development</h3><p>Welfare &amp; community support<br />welfare.imota@gov.ng</p></div>
+          <div class="service-card" style="cursor:default"><div class="service-icon">🏥</div><h3>Primary Health Care</h3><p>Health services &amp; outreach<br />health.imota@gov.ng</p></div>
+          <div class="service-card" style="cursor:default"><div class="service-icon">📣</div><h3>Information &amp; Media</h3><p>Press enquiries &amp; media<br />media.imota@gov.ng</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col brand-col">
+        <div class="footer-brand"><img src="images/coat-of-arms.svg" alt="Coat of Arms" class="footer-logo" /><div><strong>Imota LCDA</strong><small>Lagos State, Nigeria</small></div></div>
+        <p class="footer-about">Imota Local Community Development Area, Ikorodu Federal Constituency.</p>
+        <div class="social-links"><a href="#" class="social-link">f</a><a href="#" class="social-link">𝕏</a><a href="#" class="social-link">in</a><a href="#" class="social-link">▶</a></div>
+      </div>
+      <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="about.html">About Imota LCDA</a></li><li><a href="chairman.html">Chairman's Message</a></li><li><a href="projects.html">Development Projects</a></li><li><a href="news.html">News</a></li></ul></div>
+      <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html#births">Births &amp; Deaths</a></li><li><a href="services.html#permits">Permits &amp; Licences</a></li><li><a href="services.html#taxes">Revenue Payment</a></li><li><a href="services.html#welfare">Social Welfare</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><address><p>📍 Imota LCDA Secretariat, Lagos</p><p>📞 +234 800 000 0000</p><p>✉️ info@imotaLCDA.gov.ng</p></address></div>
+    </div>
+    <div class="footer-bottom"><div class="container"><span>© 2026 Imota Local Community Development Area.</span><span class="footer-bottom-links"><a href="privacy.html">Privacy Policy</a> · <a href="accessibility.html">Accessibility</a></span></div></div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

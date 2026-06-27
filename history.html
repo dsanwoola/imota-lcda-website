@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our History – Imota LCDA</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <style>
+    .timeline{position:relative;padding-left:36px}
+    .timeline::before{content:'';position:absolute;left:16px;top:0;bottom:0;width:2px;background:var(--border)}
+    .timeline-item{position:relative;margin-bottom:40px}
+    .timeline-dot{position:absolute;left:-28px;top:4px;width:24px;height:24px;border-radius:50%;background:var(--green);border:3px solid var(--white);box-shadow:0 0 0 2px var(--green)}
+    .timeline-year{font-size:11px;font-weight:700;color:var(--green);letter-spacing:.05em;text-transform:uppercase;margin-bottom:4px}
+    .timeline-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:20px}
+    .timeline-card h3{font-size:1rem;font-weight:700;margin-bottom:6px}
+    .timeline-card p{font-size:14px;color:var(--text-muted);line-height:1.7;margin:0}
+    @media(max-width:700px){.history-grid{grid-template-columns:1fr!important}}
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>📞 +234 800 000 0000</span>
+      <span>✉️ info@imotaLCDA.gov.ng</span>
+      <span class="topbar-right"><a href="portal.html" class="topbar-link">Staff Portal</a><span class="divider">|</span><a href="contact.html" class="topbar-link">Contact Us</a></span>
+    </div>
+  </div>
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <img src="images/coat-of-arms.svg" alt="Coat of Arms" class="brand-logo" />
+        <div class="brand-text"><span class="brand-title">Imota LCDA</span><span class="brand-sub">Lagos State, Nigeria</span></div>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <div class="dropdown">
+          <a href="about.html" class="nav-link active">About <span class="chevron">▾</span></a>
+          <div class="dropdown-menu">
+            <a href="about.html">About Imota</a><a href="chairman.html">Chairman's Message</a>
+            <a href="council.html">Council Members</a><a href="history.html">Our History</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="services.html" class="nav-link">Services <span class="chevron">▾</span></a>
+          <div class="dropdown-menu">
+            <a href="services.html#births">Births &amp; Deaths</a><a href="services.html#permits">Permits &amp; Licences</a>
+            <a href="services.html#taxes">Revenue &amp; Taxes</a><a href="services.html#welfare">Social Welfare</a>
+          </div>
+        </div>
+        <a href="news.html" class="nav-link">News</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-badge">Heritage</div>
+      <h1>Our History</h1>
+      <p>Tracing the rich heritage and development of Imota from its earliest roots to a thriving modern community.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start" class="history-grid">
+        <div>
+          <h2 class="section-title" style="text-align:left;margin-bottom:8px">Our Timeline</h2>
+          <p style="color:var(--text-muted);margin-bottom:36px">Key milestones in the history of Imota LCDA</p>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <p class="timeline-year">Pre-Colonial Era</p>
+              <div class="timeline-card"><h3>Founding of Imota</h3><p>Imota was founded by the Yoruba-speaking Awori people, establishing a thriving agricultural and fishing community on the banks of the Lagos Lagoon.</p></div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <p class="timeline-year">Early 1900s</p>
+              <div class="timeline-card"><h3>Colonial Administration</h3><p>During British colonial rule, Imota was incorporated into the Ikorodu District under the broader Lagos Colony administration.</p></div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <p class="timeline-year">1967</p>
+              <div class="timeline-card"><h3>Lagos State Created</h3><p>Following the creation of Lagos State, Imota became part of the Ikorodu Local Government Area, bringing structured administration and development.</p></div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <p class="timeline-year">2004</p>
+              <div class="timeline-card"><h3>LCDA Status Granted</h3><p>Imota was formally designated as a Local Community Development Area (LCDA) by the Lagos State government, gaining administrative autonomy within Ikorodu Federal Constituency.</p></div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <p class="timeline-year">2010s</p>
+              <div class="timeline-card"><h3>Infrastructure Expansion</h3><p>Significant investments in road networks, water supply, and school facilities transformed Imota into a rapidly growing urban community.</p></div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <p class="timeline-year">2020s</p>
+              <div class="timeline-card"><h3>Digital Governance</h3><p>Under modern leadership, Imota LCDA embraced digital service delivery, citizen engagement platforms, and transparent budgeting.</p></div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <p class="timeline-year">2026</p>
+              <div class="timeline-card"><h3>New Development Era</h3><p>Under the leadership of Hon. Sunday Benson, Imota LCDA is executing an ambitious development agenda focused on roads, health, education, and economic empowerment.</p></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 class="section-title" style="text-align:left;margin-bottom:8px">Geography &amp; Communities</h2>
+          <p style="color:var(--text-muted);margin-bottom:28px">Imota LCDA occupies a strategic position in Lagos State</p>
+          <div style="background:var(--green-light);border-radius:var(--radius);padding:24px;margin-bottom:28px">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+              <div><p style="font-size:12px;color:var(--text-muted);margin-bottom:2px">Location</p><p style="font-weight:600;font-size:14px">Ikorodu, Lagos State</p></div>
+              <div><p style="font-size:12px;color:var(--text-muted);margin-bottom:2px">Constituency</p><p style="font-weight:600;font-size:14px">Ikorodu Federal</p></div>
+              <div><p style="font-size:12px;color:var(--text-muted);margin-bottom:2px">Area (approx.)</p><p style="font-weight:600;font-size:14px">~85 km²</p></div>
+              <div><p style="font-size:12px;color:var(--text-muted);margin-bottom:2px">Population</p><p style="font-weight:600;font-size:14px">~250,000+</p></div>
+              <div><p style="font-size:12px;color:var(--text-muted);margin-bottom:2px">No. of Wards</p><p style="font-weight:600;font-size:14px">8 Wards</p></div>
+              <div><p style="font-size:12px;color:var(--text-muted);margin-bottom:2px">Major Language</p><p style="font-weight:600;font-size:14px">Yoruba / English</p></div>
+            </div>
+          </div>
+          <h3 style="font-size:1rem;font-weight:700;margin-bottom:14px">Major Communities</h3>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+            <div style="background:var(--white);border:1px solid var(--border);border-radius:8px;padding:12px;font-size:13px;font-weight:500">🏘️ Imota Town</div>
+            <div style="background:var(--white);border:1px solid var(--border);border-radius:8px;padding:12px;font-size:13px;font-weight:500">🏘️ Alapere</div>
+            <div style="background:var(--white);border:1px solid var(--border);border-radius:8px;padding:12px;font-size:13px;font-weight:500">🏘️ Ebute</div>
+            <div style="background:var(--white);border:1px solid var(--border);border-radius:8px;padding:12px;font-size:13px;font-weight:500">🏘️ Agboyi</div>
+            <div style="background:var(--white);border:1px solid var(--border);border-radius:8px;padding:12px;font-size:13px;font-weight:500">🏘️ Imota North</div>
+            <div style="background:var(--white);border:1px solid var(--border);border-radius:8px;padding:12px;font-size:13px;font-weight:500">🏘️ Imota South</div>
+            <div style="background:var(--white);border:1px solid var(--border);border-radius:8px;padding:12px;font-size:13px;font-weight:500">🏘️ Imota East</div>
+            <div style="background:var(--white);border:1px solid var(--border);border-radius:8px;padding:12px;font-size:13px;font-weight:500">🏘️ Imota West</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col brand-col"><div class="footer-brand"><img src="images/coat-of-arms.svg" alt="Coat of Arms" class="footer-logo" /><div><strong>Imota LCDA</strong><small>Lagos State, Nigeria</small></div></div><p class="footer-about">Imota Local Community Development Area, Ikorodu Federal Constituency.</p><div class="social-links"><a href="#" class="social-link">f</a><a href="#" class="social-link">𝕏</a><a href="#" class="social-link">in</a></div></div>
+      <div class="footer-col"><h4>About</h4><ul><li><a href="about.html">About Imota</a></li><li><a href="chairman.html">Chairman's Message</a></li><li><a href="council.html">Council Members</a></li><li><a href="history.html">Our History</a></li></ul></div>
+      <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html#births">Births &amp; Deaths</a></li><li><a href="services.html#permits">Permits &amp; Licences</a></li><li><a href="services.html#taxes">Revenue Payment</a></li><li><a href="services.html#welfare">Social Welfare</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><address><p>📍 Imota LCDA Secretariat</p><p>📞 +234 800 000 0000</p><p>✉️ info@imotaLCDA.gov.ng</p></address></div>
+    </div>
+    <div class="footer-bottom"><div class="container"><span>© 2026 Imota Local Community Development Area.</span><span class="footer-bottom-links"><a href="privacy.html">Privacy Policy</a> · <a href="accessibility.html">Accessibility</a></span></div></div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

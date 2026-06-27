@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" width="300" height="400">
+  <!-- Background -->
+  <rect width="300" height="400" fill="#e8f5ee"/>
+  <!-- Subtle pattern -->
+  <rect width="300" height="400" fill="url(#pattern)" opacity="0.3"/>
+  <defs>
+    <pattern id="pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1" fill="#1a6b3c" opacity="0.2"/>
+    </pattern>
+  </defs>
+  <!-- Person silhouette -->
+  <!-- Head -->
+  <circle cx="150" cy="110" r="52" fill="#1a6b3c" opacity="0.18"/>
+  <circle cx="150" cy="108" r="46" fill="#2d5a3d"/>
+  <!-- Neck -->
+  <rect x="136" y="152" width="28" height="30" rx="6" fill="#2d5a3d"/>
+  <!-- Body / suit jacket -->
+  <path d="M80 390 L80 230 Q80 200 110 192 L136 182 L150 210 L164 182 L190 192 Q220 200 220 230 L220 390 Z" fill="#1a6b3c"/>
+  <!-- Shirt & tie -->
+  <path d="M136 182 L150 210 L164 182 L158 200 Q150 230 142 200 Z" fill="white" opacity="0.9"/>
+  <path d="M150 210 L146 240 L150 250 L154 240 Z" fill="#c8960c"/>
+  <!-- Lapels -->
+  <path d="M136 182 Q120 195 110 220 L130 215 Z" fill="#134f2c"/>
+  <path d="M164 182 Q180 195 190 220 L170 215 Z" fill="#134f2c"/>
+  <!-- Text label -->
+  <rect x="50" y="355" width="200" height="36" rx="8" fill="#1a6b3c" opacity="0.15"/>
+  <text x="150" y="372" text-anchor="middle" font-family="Georgia,serif" font-size="12" fill="#1a6b3c" font-weight="bold">Hon. Sunday Benson</text>
+  <text x="150" y="385" text-anchor="middle" font-family="Arial,sans-serif" font-size="9.5" fill="#4b5563">Executive Chairman, Imota LCDA</text>
+</svg>

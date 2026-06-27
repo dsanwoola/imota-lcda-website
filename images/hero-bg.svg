@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800" preserveAspectRatio="xMidYMid slice" width="1400" height="800">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a3d1e"/>
+      <stop offset="100%" stop-color="#1a6b3c"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d4a26"/>
+      <stop offset="100%" stop-color="#082a14"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky background -->
+  <rect width="1400" height="800" fill="url(#sky)"/>
+
+  <!-- Stars / dots -->
+  <circle cx="100" cy="80" r="1.5" fill="white" opacity="0.4"/>
+  <circle cx="250" cy="50" r="1" fill="white" opacity="0.3"/>
+  <circle cx="400" cy="100" r="1.5" fill="white" opacity="0.35"/>
+  <circle cx="600" cy="60" r="1" fill="white" opacity="0.3"/>
+  <circle cx="800" cy="90" r="1.5" fill="white" opacity="0.4"/>
+  <circle cx="1000" cy="40" r="1" fill="white" opacity="0.3"/>
+  <circle cx="1200" cy="70" r="2" fill="white" opacity="0.35"/>
+  <circle cx="1350" cy="110" r="1" fill="white" opacity="0.25"/>
+  <circle cx="700" cy="30" r="1.5" fill="white" opacity="0.4"/>
+  <circle cx="950" cy="120" r="1" fill="white" opacity="0.3"/>
+
+  <!-- Distant city skyline silhouette -->
+  <g opacity="0.15" fill="#4ade80">
+    <rect x="50"  y="400" width="30" height="180"/>
+    <rect x="90"  y="350" width="25" height="230"/>
+    <rect x="120" y="370" width="20" height="210"/>
+    <rect x="150" y="320" width="35" height="260"/>
+    <rect x="190" y="380" width="20" height="200"/>
+    <rect x="220" y="300" width="30" height="280"/>
+    <rect x="260" y="360" width="25" height="220"/>
+    <rect x="300" y="340" width="20" height="240"/>
+    <rect x="330" y="290" width="40" height="290"/>
+    <rect x="380" y="370" width="20" height="210"/>
+    <rect x="900" y="390" width="30" height="190"/>
+    <rect x="940" y="330" width="25" height="250"/>
+    <rect x="975" y="355" width="35" height="225"/>
+    <rect x="1020" y="310" width="20" height="270"/>
+    <rect x="1050" y="380" width="30" height="200"/>
+    <rect x="1090" y="295" width="25" height="285"/>
+    <rect x="1125" y="365" width="20" height="215"/>
+    <rect x="1155" y="340" width="35" height="240"/>
+    <rect x="1200" y="370" width="20" height="210"/>
+    <rect x="1230" y="300" width="30" height="280"/>
+    <rect x="1270" y="360" width="25" height="220"/>
+    <rect x="1310" y="390" width="40" height="190"/>
+    <rect x="1360" y="350" width="30" height="230"/>
+  </g>
+
+  <!-- Palm trees left -->
+  <g opacity="0.25" fill="#2d5a3d">
+    <!-- Tree trunk 1 -->
+    <path d="M80 800 Q90 700 100 600" stroke="#2d5a3d" stroke-width="8" fill="none"/>
+    <!-- Leaves -->
+    <ellipse cx="100" cy="600" rx="60" ry="20" fill="#2d5a3d" transform="rotate(-30 100 600)"/>
+    <ellipse cx="100" cy="600" rx="60" ry="20" fill="#2d5a3d" transform="rotate(20 100 600)"/>
+    <ellipse cx="100" cy="600" rx="60" ry="20" fill="#2d5a3d" transform="rotate(70 100 600)"/>
+
+    <!-- Tree trunk 2 -->
+    <path d="M1300 800 Q1310 700 1320 590" stroke="#2d5a3d" stroke-width="8" fill="none"/>
+    <ellipse cx="1320" cy="590" rx="60" ry="20" fill="#2d5a3d" transform="rotate(-40 1320 590)"/>
+    <ellipse cx="1320" cy="590" rx="60" ry="20" fill="#2d5a3d" transform="rotate(15 1320 590)"/>
+    <ellipse cx="1320" cy="590" rx="60" ry="20" fill="#2d5a3d" transform="rotate(65 1320 590)"/>
+  </g>
+
+  <!-- Lagoon water -->
+  <path d="M0 620 Q350 580 700 620 Q1050 660 1400 620 L1400 800 L0 800 Z" fill="url(#water)" opacity="0.5"/>
+  <path d="M0 650 Q350 620 700 650 Q1050 680 1400 650 L1400 800 L0 800 Z" fill="#082a14" opacity="0.4"/>
+
+  <!-- Water shimmer lines -->
+  <g stroke="rgba(255,255,255,0.08)" stroke-width="1.5" fill="none">
+    <path d="M0 660 Q200 655 400 660 Q600 665 800 660 Q1000 655 1200 660 Q1300 662 1400 660"/>
+    <path d="M0 680 Q200 675 400 680 Q600 685 800 680 Q1000 675 1200 680 Q1300 682 1400 680"/>
+    <path d="M0 700 Q200 695 400 700 Q600 705 800 700 Q1000 695 1200 700 Q1300 702 1400 700"/>
+  </g>
+
+  <!-- Subtle grid overlay for texture -->
+  <defs>
+    <pattern id="grid" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M 80 0 L 0 0 0 80" fill="none" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1400" height="800" fill="url(#grid)"/>
+</svg>

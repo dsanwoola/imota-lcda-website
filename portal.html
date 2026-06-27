@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Staff Portal – Imota LCDA</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>📞 +234 800 000 0000</span>
+      <span>✉️ info@imotaLCDA.gov.ng</span>
+      <span class="topbar-right"><a href="index.html" class="topbar-link">← Public Website</a></span>
+    </div>
+  </div>
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <img src="images/coat-of-arms.svg" alt="Coat of Arms" class="brand-logo" />
+        <div class="brand-text"><span class="brand-title">Imota LCDA</span><span class="brand-sub">Staff Portal</span></div>
+      </a>
+    </div>
+  </header>
+
+  <section class="portal-hero">
+    <div class="container">
+      <div style="display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:100px;padding:6px 16px;font-size:12px;color:rgba(255,255,255,.7);margin-bottom:20px">🔒 Secure Staff Access</div>
+      <h1>LCDA Staff Portal</h1>
+      <p style="color:rgba(255,255,255,.6);margin-top:8px">For authorised Imota LCDA staff and administrators only</p>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--gray-50);padding-top:60px">
+    <div class="container">
+      <div class="login-card">
+        <div style="text-align:center;margin-bottom:28px">
+          <div style="width:56px;height:56px;background:var(--green-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin:0 auto 12px">🏛️</div>
+          <h2 style="font-size:1.2rem;margin-bottom:4px">Sign In to Portal</h2>
+          <p style="font-size:13px;color:var(--text-muted)">Use your official LCDA credentials</p>
+        </div>
+        <form id="portalLoginForm">
+          <div class="form-group"><label for="staffId">Staff ID / Email</label><input type="text" id="staffId" placeholder="e.g. IMOTA/2024/001" required /></div>
+          <div class="form-group"><label for="password">Password</label><input type="password" id="password" placeholder="Enter your password" required /></div>
+          <button type="submit" class="btn btn-primary" style="width:100%;margin-top:8px">Sign In</button>
+        </form>
+        <p class="login-note" style="margin-top:16px">
+          <a href="contact.html" style="color:var(--green)">Forgot password?</a> · Contact IT Support: <a href="mailto:itsupport@imotaLCDA.gov.ng" style="color:var(--green)">itsupport@imotaLCDA.gov.ng</a>
+        </p>
+      </div>
+
+      <div style="max-width:840px;margin:56px auto 0">
+        <h2 class="section-title" style="text-align:center;margin-bottom:8px">Portal Features</h2>
+        <p class="section-sub" style="text-align:center;margin-bottom:36px">Tools available to authorised staff after login</p>
+        <div class="services-grid" style="grid-template-columns:repeat(auto-fill,minmax(220px,1fr))">
+          <div class="service-card" style="cursor:default"><div class="service-icon">📊</div><h3>Dashboard</h3><p>Overview of department activities, tasks, and key performance metrics.</p></div>
+          <div class="service-card" style="cursor:default"><div class="service-icon">📁</div><h3>Document Management</h3><p>Upload, retrieve, and manage official LCDA documents and records.</p></div>
+          <div class="service-card" style="cursor:default"><div class="service-icon">📋</div><h3>Registry System</h3><p>Process births, deaths, and marriage registrations digitally.</p></div>
+          <div class="service-card" style="cursor:default"><div class="service-icon">💰</div><h3>Revenue Tracking</h3><p>Monitor levy collections, generate receipts, and view payment reports.</p></div>
+          <div class="service-card" style="cursor:default"><div class="service-icon">📣</div><h3>Announcements</h3><p>Publish news, public notices, and announcements to the main website.</p></div>
+          <div class="service-card" style="cursor:default"><div class="service-icon">🗂️</div><h3>Permit Processing</h3><p>Review, approve, or reject permit and licence applications.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" style="margin-top:0">
+    <div class="footer-bottom" style="border-top:none"><div class="container">
+      <span>© 2026 Imota Local Community Development Area. Staff Portal – Restricted Access.</span>
+      <span class="footer-bottom-links"><a href="index.html">Public Website</a> · <a href="privacy.html">Privacy Policy</a></span>
+    </div></div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById('portalLoginForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const btn = e.target.querySelector('button');
+      btn.textContent = 'Signing in…';
+      setTimeout(() => { btn.textContent = 'Sign In'; alert('Portal login requires backend integration. Please contact IT Support.'); }, 1200);
+    });
+  </script>
+</body>
+</html>

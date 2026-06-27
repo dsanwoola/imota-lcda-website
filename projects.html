@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects – Imota LCDA</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <style>
+    .filter-btn{padding:8px 18px;border-radius:100px;border:1.5px solid var(--border);background:var(--white);font-size:13px;font-weight:500;cursor:pointer;transition:all .2s;color:var(--gray-800)}
+    .filter-btn:hover,.filter-btn.active{background:var(--green);color:var(--white);border-color:var(--green)}
+    .project-card.hidden{display:none}
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>📞 +234 800 000 0000</span>
+      <span>✉️ info@imotaLCDA.gov.ng</span>
+      <span class="topbar-right"><a href="portal.html" class="topbar-link">Staff Portal</a><span class="divider">|</span><a href="contact.html" class="topbar-link">Contact Us</a></span>
+    </div>
+  </div>
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <img src="images/coat-of-arms.svg" alt="Coat of Arms" class="brand-logo" />
+        <div class="brand-text"><span class="brand-title">Imota LCDA</span><span class="brand-sub">Lagos State, Nigeria</span></div>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <div class="dropdown">
+          <a href="about.html" class="nav-link">About <span class="chevron">▾</span></a>
+          <div class="dropdown-menu">
+            <a href="about.html">About Imota</a><a href="chairman.html">Chairman's Message</a>
+            <a href="council.html">Council Members</a><a href="history.html">Our History</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="services.html" class="nav-link">Services <span class="chevron">▾</span></a>
+          <div class="dropdown-menu">
+            <a href="services.html#births">Births &amp; Deaths</a><a href="services.html#permits">Permits &amp; Licences</a>
+            <a href="services.html#taxes">Revenue &amp; Taxes</a><a href="services.html#welfare">Social Welfare</a>
+          </div>
+        </div>
+        <a href="news.html" class="nav-link">News</a>
+        <a href="projects.html" class="nav-link active">Projects</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-badge">Development</div>
+      <h1>Our Projects</h1>
+      <p>Ongoing, completed, and planned development initiatives across communities in Imota LCDA.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:36px">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="ongoing">Ongoing</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+        <button class="filter-btn" data-filter="planned">Planned</button>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+        <div class="project-card" data-status="ongoing">
+          <div class="project-header"><span class="project-status active">Ongoing</span><span class="project-dept">Infrastructure</span></div>
+          <h3>Imota–Agric Road Rehabilitation</h3>
+          <p>Full reconstruction of 3.2 km arterial road connecting Imota to Agric junction. Includes drainage channels and pedestrian walkways.</p>
+          <div class="progress-bar-wrap"><div class="progress-bar" style="width:65%"></div></div>
+          <span class="progress-label">65% Complete · Est. Completion: Sept 2026</span>
+        </div>
+        <div class="project-card" data-status="ongoing">
+          <div class="project-header"><span class="project-status active">Ongoing</span><span class="project-dept">Education</span></div>
+          <h3>Primary School Renovation – 4 Schools</h3>
+          <p>Renovation of classrooms, roofing, toilets, and fencing at Imota Primary School I, II, III, and Alapere Primary School.</p>
+          <div class="progress-bar-wrap"><div class="progress-bar" style="width:80%"></div></div>
+          <span class="progress-label">80% Complete · Est. Completion: July 2026</span>
+        </div>
+        <div class="project-card" data-status="ongoing">
+          <div class="project-header"><span class="project-status active">Ongoing</span><span class="project-dept">Utilities</span></div>
+          <h3>Solar Street Lighting – Phase 2</h3>
+          <p>Installation of 200 additional solar street lights across 8 communities following the success of Phase 1.</p>
+          <div class="progress-bar-wrap"><div class="progress-bar" style="width:45%"></div></div>
+          <span class="progress-label">45% Complete · Est. Completion: Aug 2026</span>
+        </div>
+        <div class="project-card" data-status="planned">
+          <div class="project-header"><span class="project-status planned">Planned</span><span class="project-dept">Health</span></div>
+          <h3>Primary Health Centre Upgrade</h3>
+          <p>Equipping Imota PHC with modern diagnostic equipment, maternity ward expansion, and additional consulting rooms.</p>
+          <div class="progress-bar-wrap"><div class="progress-bar" style="width:20%"></div></div>
+          <span class="progress-label">20% Complete · Est. Start: Q3 2026</span>
+        </div>
+        <div class="project-card" data-status="planned">
+          <div class="project-header"><span class="project-status planned">Planned</span><span class="project-dept">Environment</span></div>
+          <h3>Imota Market Waste Management System</h3>
+          <p>Structured waste collection, sorting stations, and recycling facilities for the Imota main market and surrounding areas.</p>
+          <div class="progress-bar-wrap"><div class="progress-bar" style="width:10%"></div></div>
+          <span class="progress-label">Planning Phase · Est. Start: Q4 2026</span>
+        </div>
+        <div class="project-card" data-status="completed">
+          <div class="project-header"><span class="project-status completed">Completed</span><span class="project-dept">Utilities</span></div>
+          <h3>Solar Street Lights – Phase 1 (120 Units)</h3>
+          <p>Successful installation of 120 solar street lights across 6 communities including Imota Town, Alapere, and Ebute.</p>
+          <div class="progress-bar-wrap"><div class="progress-bar" style="width:100%;background:linear-gradient(90deg,#4338ca,#6366f1)"></div></div>
+          <span class="progress-label">Completed: May 2026</span>
+        </div>
+        <div class="project-card" data-status="completed">
+          <div class="project-header"><span class="project-status completed">Completed</span><span class="project-dept">Community</span></div>
+          <h3>Imota Community Hall Renovation</h3>
+          <p>Complete renovation of the LCDA Community Hall including new roofing, tiling, electrical works, and modern seating for 500 persons.</p>
+          <div class="progress-bar-wrap"><div class="progress-bar" style="width:100%;background:linear-gradient(90deg,#4338ca,#6366f1)"></div></div>
+          <span class="progress-label">Completed: March 2026</span>
+        </div>
+        <div class="project-card" data-status="completed">
+          <div class="project-header"><span class="project-status completed">Completed</span><span class="project-dept">Water</span></div>
+          <h3>Borehole &amp; Water Stations – 5 Communities</h3>
+          <p>Solar-powered boreholes with water distribution stations, providing clean water access to over 15,000 residents.</p>
+          <div class="progress-bar-wrap"><div class="progress-bar" style="width:100%;background:linear-gradient(90deg,#4338ca,#6366f1)"></div></div>
+          <span class="progress-label">Completed: January 2026</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col brand-col">
+        <div class="footer-brand"><img src="images/coat-of-arms.svg" alt="Coat of Arms" class="footer-logo" /><div><strong>Imota LCDA</strong><small>Lagos State, Nigeria</small></div></div>
+        <p class="footer-about">Imota Local Community Development Area, Ikorodu Federal Constituency.</p>
+        <div class="social-links"><a href="#" class="social-link">f</a><a href="#" class="social-link">𝕏</a><a href="#" class="social-link">in</a><a href="#" class="social-link">▶</a></div>
+      </div>
+      <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="about.html">About Imota LCDA</a></li><li><a href="chairman.html">Chairman's Message</a></li><li><a href="news.html">News</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html#births">Births &amp; Deaths</a></li><li><a href="services.html#permits">Permits &amp; Licences</a></li><li><a href="services.html#taxes">Revenue Payment</a></li><li><a href="services.html#welfare">Social Welfare</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><address><p>📍 Imota LCDA Secretariat, Lagos</p><p>📞 +234 800 000 0000</p><p>✉️ info@imotaLCDA.gov.ng</p></address></div>
+    </div>
+    <div class="footer-bottom"><div class="container"><span>© 2026 Imota Local Community Development Area.</span><span class="footer-bottom-links"><a href="privacy.html">Privacy Policy</a> · <a href="accessibility.html">Accessibility</a></span></div></div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script>
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('#projectsGrid .project-card').forEach(card => {
+          card.classList.toggle('hidden', filter !== 'all' && card.dataset.status !== filter);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

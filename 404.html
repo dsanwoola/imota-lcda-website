@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found – Imota LCDA</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <style>
+    .not-found {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 24px;
+    }
+    .not-found-inner { max-width: 520px; }
+    .error-code {
+      font-family: var(--font-serif);
+      font-size: 8rem;
+      font-weight: 800;
+      color: var(--green-light);
+      line-height: 1;
+      margin-bottom: 0;
+      position: relative;
+    }
+    .error-code span {
+      color: var(--green);
+    }
+    .not-found h1 {
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      margin: 16px 0 12px;
+    }
+    .not-found p {
+      color: var(--text-muted);
+      margin-bottom: 32px;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    .not-found-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn-outline-green {
+      padding: 12px 24px;
+      border-radius: var(--radius-sm);
+      border: 1.5px solid var(--green);
+      color: var(--green);
+      font-size: 14px;
+      font-weight: 600;
+      transition: all .2s;
+    }
+    .btn-outline-green:hover { background: var(--green); color: white; }
+    .quick-links {
+      margin-top: 48px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+    }
+    .quick-links h3 { font-size: 13px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: .07em; margin-bottom: 16px; }
+    .quick-links-grid { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+    .quick-link-chip {
+      padding: 7px 16px;
+      border-radius: 100px;
+      background: var(--gray-100);
+      color: var(--gray-800);
+      font-size: 13px;
+      font-weight: 500;
+      transition: all .2s;
+    }
+    .quick-link-chip:hover { background: var(--green); color: white; }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>📞 +234 800 000 0000</span>
+      <span>✉️ info@imotaLCDA.gov.ng</span>
+      <span class="topbar-right"><a href="portal.html" class="topbar-link">Staff Portal</a><span class="divider">|</span><a href="contact.html" class="topbar-link">Contact Us</a></span>
+    </div>
+  </div>
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <img src="images/coat-of-arms.svg" alt="Coat of Arms" class="brand-logo" />
+        <div class="brand-text"><span class="brand-title">Imota LCDA</span><span class="brand-sub">Lagos State, Nigeria</span></div>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="news.html" class="nav-link">News</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="not-found">
+    <div class="not-found-inner">
+      <p class="error-code"><span>4</span>0<span>4</span></p>
+      <h1>Page Not Found</h1>
+      <p>Sorry, the page you are looking for does not exist or may have been moved. Try using the navigation above, or return to the homepage.</p>
+      <div class="not-found-actions">
+        <a href="index.html" class="btn btn-primary">← Back to Home</a>
+        <a href="contact.html" class="btn-outline-green">Contact Us</a>
+      </div>
+      <div class="quick-links">
+        <h3>Popular pages</h3>
+        <div class="quick-links-grid">
+          <a href="services.html" class="quick-link-chip">Services</a>
+          <a href="news.html" class="quick-link-chip">News</a>
+          <a href="projects.html" class="quick-link-chip">Projects</a>
+          <a href="chairman.html" class="quick-link-chip">Chairman</a>
+          <a href="council.html" class="quick-link-chip">Council</a>
+          <a href="portal.html" class="quick-link-chip">Staff Portal</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-bottom"><div class="container">
+      <span>© 2026 Imota Local Community Development Area.</span>
+      <span class="footer-bottom-links"><a href="privacy.html">Privacy Policy</a> · <a href="accessibility.html">Accessibility</a></span>
+    </div></div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
