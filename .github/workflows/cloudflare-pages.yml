@@ -1,0 +1,51 @@
+name: Deploy to Cloudflare Pages
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare Cloudflare Pages assets
+        run: |
+          mkdir -p /tmp/imota-cloudflare-pages
+          rsync -a ./ /tmp/imota-cloudflare-pages/ \
+            --exclude firebase.json \
+            --exclude .firebaserc \
+            --exclude '.*' \
+            --exclude node_modules/
+          cat > /tmp/imota-cloudflare-pages/_headers <<'EOF'
+          /*.html
+            Cache-Control: no-cache
+
+          /*.css
+            Cache-Control: public, max-age=3600
+
+          /*.js
+            Cache-Control: public, max-age=3600
+
+          /*.jpg
+            Cache-Control: public, max-age=2592000, immutable
+
+          /*.jpeg
+            Cache-Control: public, max-age=2592000, immutable
+
+          /*.png
+            Cache-Control: public, max-age=2592000, immutable
+
+          /*.webp
+            Cache-Control: public, max-age=2592000, immutable
+
+          /*.svg
+            Cache-Control: public, max-age=2592000, immutable
+          EOF
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy /tmp/imota-cloudflare-pages --project-name imota-lcda-website --branch master
